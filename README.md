@@ -50,7 +50,7 @@
 2.1
 
 ```bash
-git clone https://github.com/ikanam-ai/MarvelLLM.git
+git clone https://github.com/icon-ai-tech/MarvelLLM.git
 cd MarvelLLM
 ```
 
