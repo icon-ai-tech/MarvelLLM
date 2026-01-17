@@ -1,0 +1,34 @@
+## Сервисы и порты
+
+| Сервис         | Назначение               | Порт (внешний) |
+|----------------|--------------------------|----------------|
+| Attu           | UI-интерфейс Milvus      | `27361` |
+| Milvus RPC     | Векторный движок         | `27362` |
+| Milvus HTTP    | Мониторинг Milvus        | `27363` |
+| MinIO          | S3-хранилище             | `39031` |
+
+## Переменные окружения
+
+Перед запуском создайте файл `.env` в корне проекта со следующими переменными:
+
+```bash
+# Пути для хранения данных
+ETCD_VOLUME=./volumes/etcd
+MINIO_VOLUME=./volumes/minio
+MILVUS_VOLUME=./volumes/milvus
+
+# Учетные данные MinIO
+MINIO_ACCESS_KEY=minioadmin
+MINIO_SECRET_KEY=minioadmin
+
+MINIO_PORT=
+MILVUS_PORT_RPC=
+MILVUS_PORT_HTTP=
+ATTU_PORT=
+```
+
+## Запуск
+
+```bash
+docker compose up -d
+```

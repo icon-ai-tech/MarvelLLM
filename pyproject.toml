@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "marvelllm"
+version = "1.2.0"
+package-mode = false 
+description = "A chatbot that uses LLM to help with Marvel answers."
+authors = ["Ukolov Stepan <stepan_ukolov@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+langchain-core = "^0.3.49"
+langchain-ollama = "^0.3.0"
+pydantic = "^2.11.0"
+spacy = "^3.8.4"
+elasticsearch = "^8.17.2"
+pyspellchecker = "^0.8.2"
+pandas = "^2.2.3"
+langchain-huggingface = "^0.1.2"
+scikit-learn = "^1.6.1"
+langchain-community = "^0.3.20"
+fuzzywuzzy = "^0.18.0"
+streamlit = "^1.44.0"
+pymongo = "^4.11.3"
+langgraph-checkpoint-mongodb = "^0.1.2"
+langgraph = "^0.3.21"
+python-telegram-bot = "^22.0"
+openpyxl = "^3.1.5"
+vllm = "^0.8.4"
+python-levenshtein = "^0.27.1"
+langchain-openai = "^0.3.16"
+pymilvus = "^2.5.8"
+sqlparse = "^0.5.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+isort = "^6.0.1"
+ipykernel = "^6.29.5"
+python-dotenv = "^1.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.black]
+line-length = 120

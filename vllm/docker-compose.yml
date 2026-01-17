@@ -1,0 +1,13 @@
+
+services:
+  vllm-server:
+    build:
+      context: .
+    container_name: vllm-server
+    ports:
+      - "27362:27362"
+    shm_size: 256g
+    runtime: nvidia
+    restart: always
+    volumes:
+      - ./logs:/logs
