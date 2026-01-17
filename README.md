@@ -1,7 +1,7 @@
 # 🦸‍♂️MarvelLLM
 
 <p align="center">
-  <img src="extensions/images/logo.png" alt="AcademicLLM Logo" width="400" height="400">
+  <img src="logo.png" alt="AcademicLLM Logo" width="400" height="400">
 </p>
 
 <p align="center">
